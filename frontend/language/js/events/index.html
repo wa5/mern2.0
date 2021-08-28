@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+ 
+
+
+
+<button  >click</button>
+<h1  onmouseover="alert('hi')">hhhh</h1>
+
+        <div class="grandparent">
+
+<div class="parent">
+    
+    <div class="child">
+
+    </div>
+</div>
+
+        </div>
+       
+
+<img  class="car" width="200px"  height="200px" src="1.jpg" alt="">
+
+<img class="spice" width="200px"  height="200px" src="download.jpg" alt="">
+
+
+        <script >
+const grandparent=document.querySelector('.grandparent');
+const parent=document.querySelector('.parent');
+const child=document.querySelector('.child');
+
+grandparent.addEventListener("click",(e)=>{
+    console.log(e.target);
+})
+
+
+const car=document.querySelector('.car');
+
+car.addEventListener("click",(e)=>{
+    console.log(e.target);
+    location.replace("https://ucars.sg/")
+})
+
+
+
+        </script>
+    </body>
+</html>

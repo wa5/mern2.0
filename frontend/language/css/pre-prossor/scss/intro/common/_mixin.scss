@@ -1,0 +1,8 @@
+@mixin sister{
+    font-size: 30px;
+}
+@mixin brother($slap,$punch,$kick) {
+    background-color: $slap;
+    width: $punch;
+    height: $kick;
+}

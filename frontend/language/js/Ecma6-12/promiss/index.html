@@ -1,0 +1,15 @@
+<script>
+let sagarpromiss=new Promise((resove,reject)=>{
+
+    setTimeout(()=>{
+
+        resove("tq for resoving it")
+    },3000)
+})
+sagarpromiss.then((data)=>{
+    console.log(data)
+})
+console.log(sagarpromiss)
+
+
+</script>

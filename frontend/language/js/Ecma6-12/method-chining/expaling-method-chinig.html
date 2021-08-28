@@ -1,0 +1,49 @@
+<script>
+class User{
+constructor(email,name){
+this.email=email;
+this.name=name;
+this.score=0;
+}
+
+login(){
+   console.log( this.email,": just loged in")
+   return this;
+}
+
+logout(){
+    console.log( this.email,": just loged out")
+    return this;
+}
+
+updatescore(){
+    this.score++;
+    console.log( this.email,": score is now",this.score)
+    return this;
+}
+
+
+}
+
+var userOne=new User('josoph@gmail.com','josoph')
+var userTwo=new User('sagar@gmail.com','sagar')
+
+
+
+</script>
+
+
+<script>
+
+class Child extends User{
+
+    check(){
+        console.log("im a child of user")
+    }
+}
+
+
+var childone=new Child();
+
+
+</script>

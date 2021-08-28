@@ -1,0 +1,11 @@
+<script>
+    async function sagarapi(){
+        const data= await fetch("https://wa5.github.io/tomatorice/");
+const data2=await data.json();
+        return data2
+    }
+
+    let sagar=sagarapi()
+    sagar.then((res)=>{ console.log(res)})
+    
+        </script>

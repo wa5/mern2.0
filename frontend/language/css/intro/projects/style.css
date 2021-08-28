@@ -1,0 +1,13 @@
+.parent{
+    border: 2px solid black;
+}
+.childes{
+    display: inline-block;
+    background-color: chartreuse;
+    width: 200px;
+    height: 60px;
+   
+}
+.childes:hover{
+    background-color: crimson;
+}

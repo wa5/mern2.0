@@ -1,0 +1,27 @@
+
+@import "./common/colors";
+@import "./common/fonts";
+@import "./common/mixin";
+@import "./common/secondary";
+
+
+.aboutsec{
+    background-color: $color;
+}
+
+
+
+.parent{
+    @include brother(rgb(43, 255, 0),300px ,300px );
+    @include sister;
+    .child{
+        @include brother(rgb(255, 0, 157),200px ,200px );
+        @include sister;
+        .grandchild{
+            @include brother(rgb(4, 0, 255),100px ,100px );
+            @include sister;
+        }
+    }
+
+}
+

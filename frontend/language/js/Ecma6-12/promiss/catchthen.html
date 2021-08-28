@@ -1,0 +1,25 @@
+<script>
+
+function fun(){
+    return new Promise((resp,rej)=>{
+        setTimeout(()=>{
+            const err=true;
+            if(!err){
+                console.log("tq for juice");
+                resp()
+            }else{
+                console.log("sorry im busy");
+                rej();
+            }
+        },3000)
+    })
+}
+
+fun().then(()=>{
+    console.log("im getting executed b promiss fullfiled")
+}).catch(()=>{
+    console.log("error becuse sagar is not piking phon")
+})
+
+
+</script>

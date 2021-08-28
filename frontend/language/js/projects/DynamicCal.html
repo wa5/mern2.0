@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stles.css">
+    </head>
+    <body>
+       
+<div class="fg">
+    <label for="">number 1</label><br>
+<input id="num1" type="number" value=""><br>
+<label for="">number 2</label><br>
+<input id="num2" type="number"><br>
+
+<button onclick="add()">add</button>
+<button>sub</button>
+<button>mul</button>
+<button>div</button>
+
+<h1 id="k"></h1>
+
+</div>
+
+
+<script>
+
+function add(){
+
+    var a=document.getElementById('num1').value;
+    var b=document.getElementById('num2').value;
+    var value=Number(a)+Number(b)
+    document.getElementById('k').innerHTML=value
+}
+
+
+
+
+</script>
+
+
+
+    </body>
+</html>

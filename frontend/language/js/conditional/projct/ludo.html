@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <h1>welcome ludo</h1>
+    <h2>to play clic on button</h2>
+    <button onclick="paly()">click me to see ur random no</button>
+    <h2 id="e"></h2>
+
+    
+    <h2 id="jj"></h2>
+    <h2 id="jj2"></h2>
+    <h2 id="jj3"></h2>
+    <script>
+
+        function paly() {
+var random=Math.floor(Math.random()*6)
+var random2=Math.floor(Math.random()*6)
+            document.getElementById('jj').innerHTML = `sagar  ${random}`;
+            document.getElementById('jj2').innerHTML =`josoh  ${random2}`;
+            
+
+if(random>random2){
+    document.getElementById('jj3').innerHTML =`winner is: sagar`;
+}else{
+    document.getElementById('jj3').innerHTML =`winner is: josoph`;
+}
+
+
+
+            switch (random) {
+
+                case 0:
+                    document.getElementById('e').innerHTML = "monday";
+                    break;
+                case 1:
+                    document.getElementById('e').innerHTML = "tuseday";
+                    break;
+                case 2:
+                    document.getElementById('e').innerHTML = "wednesday";
+                    break;
+                case 3:
+                    document.getElementById('e').innerHTML = "thersday";
+                    break;
+                case 4:
+                    document.getElementById('e').innerHTML = "friday";
+                    break;
+                case 5:
+                    document.getElementById('e').innerHTML = "saturday";
+                    break;
+default:
+document.getElementById('e').innerHTML = "wron value inserted";
+                    break;
+            }
+
+        }
+
+
+    </script>
+
+    <script></script>
+</body>
+
+</html>

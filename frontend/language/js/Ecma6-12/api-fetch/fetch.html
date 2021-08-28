@@ -1,0 +1,14 @@
+<script>
+function sagarapi(){
+    const data=fetch("https://wa5.github.io/tomatorice/").then((resp)=>{
+    return resp.text()
+}).then((resp1)=>{
+    console.log(resp1);
+})
+    return data
+}
+   
+sagarapi()
+
+
+    </script>
